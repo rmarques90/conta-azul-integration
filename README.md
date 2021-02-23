@@ -62,9 +62,9 @@ By now your user is integrated and ready to begin to send data to Conta Azul. To
     ```
 - Add new System
    ```http
-      POST http://localhost:3000/admin/system/add
-      Authorization: <admin-jwt-token>
-      Content-Type: application/json
+   POST http://localhost:3000/admin/system/add
+   Authorization: <admin-jwt-token>
+   Content-Type: application/json
       {
         "name": "Application",
         "url": "http://localhost:8080/crm/api/1/contaazul",
@@ -76,9 +76,9 @@ By now your user is integrated and ready to begin to send data to Conta Azul. To
    ```
 - Add new user
    ```http
-      POST http://localhost:3000/system/user-add
-      Authorization: <system-jwt-token>
-      Content-Type: application/json
+   POST http://localhost:3000/system/user-add
+   Authorization: <system-jwt-token>
+   Content-Type: application/json
       {
         "email": "1@test.com"
       } 
