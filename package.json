@@ -1,0 +1,24 @@
+{
+  "name": "integracao-contaazul",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "R Marques",
+  "license": "MIT",
+  "scripts": {
+    "run-server": "node index.js",
+    "consumer:customer": "cd RabbitMQ/Consumers && node customer.js",
+    "consumer:product": "cd RabbitMQ/Consumers && node product.js",
+    "consumer:sale": "cd RabbitMQ/Consumers && node sale.js",
+    "consumer:service": "cd RabbitMQ/Consumers && node service.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.6.0",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.17"
+  }
+}
